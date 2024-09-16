@@ -33,7 +33,7 @@ nav ul li a {
 }
 
 main.main-content {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     height: 250px;
     background-color: #e0e0e0;
