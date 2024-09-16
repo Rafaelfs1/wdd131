@@ -32,7 +32,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-section.main-content {
+main.main-content {
     display: flex;
     justify-content: space-between;
     height: 250px;
@@ -52,6 +52,7 @@ aside {
 }
 
 footer {
+    display: grid;
     background-color: #333;
     color: white;
     text-align: center;
