@@ -21,7 +21,7 @@ nav {
 
 nav ul {
     list-style-type: none;
-    display: flex;
+    display: grid;
     justify-content: space-around;
     padding: 20px;
 }
