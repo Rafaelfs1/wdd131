@@ -162,6 +162,12 @@ main h1 {
     font-weight: lighter;
 }
 
+#orange2 {
+    color: var(--color-accent);
+    font-size: 0.9em;
+    font-weight: lighter;
+}
+
 #white {
     color: var(--color-background);
     font-size: 0.8em;
