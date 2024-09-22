@@ -4,12 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/layout.css">
-    <title>wdd 131</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Rafael Silva / web Fundamentals, html, css, js / this site from a byu-i's course learner">
+    <meta name="author" content="Rafael silva">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <title>WDD 131 - Dynamic Web Fundamentals - Rafael Silva</title>
 </head>
 
 <body>
-    <h1>WDD 131</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals <span id="white">Rafael Silva</span></h1>
+    </header>
+
+    <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/rafael-silva-67575910a/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=por&id=p12#p12">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h2>About Me<span id="green"> Rafael Silva</span></h2>
+            <img class="pic" src="images/Rafael.png" alt="Rafael silva" >
+            <p>Hi, I’m Rafael Silva, a designer, husband, and father. I love watching series in my free time and enjoy spending quality moments playing with my 7-year-old child. I’m also passionate about learning programming and continuously improving my skills.</p>
+
+            <div>
+                <h2 id="right"><span id="orange">I'm from</span> Londrina, Brazil</h2>
+                
+                <figure >
+                    <Img class="pic-2" src="images/brazil-flag.jpeg" alt="brazilian flag" >
+                    <figcaption>Oficial Flag of Brazil</figcaption>            
+                </figure> 
+            
+                <p>Londrina, in Paraná, Brazil, is a vibrant city known for its agricultural roots and modern urban development. With a rich history, beautiful green spaces, and a dynamic economy, it offers a great balance of culture, nature, and progress.</p>
+                
+            </div>
+
+        </section>
+        <section class="card" id="grey">
+            <h2 id="sub-h2">My top 3 </br> Programming Links</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a> - A great resource for learning HTML, CSS, JavaScript, and more with interactive tutorials.</li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> - A free learning platform offering courses in various programming languages and web development.</li>
+                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a> - Comprehensive documentation on web technologies with practical examples and guides.</li>
+                
+            </ul>
+        </section>
+    </main>
+    
 </body>
+
+<footer>
+    <p><span id="currentyear"></span> 👍 Rafael Silva 👍 Londrina, Brazil</p>
+    <p id="orange">Last modified: <span id="lastModified"></span></p>
+</footer>
 
 </html>
