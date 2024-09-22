@@ -90,6 +90,18 @@ button:hover {
     background-color: var(--color-secondary-dark);
 }
 
+.card a{
+    color: #883f00;
+    font-weight: bold;
+}
+.card a:hover{
+    font-size: 1.1em;
+    background-color: var(--color-accent);
+    color: #e0e0e0;
+    padding: 0 2px;
+    border-radius: 4px;
+}
+
 /*--------------- main ------------------------------------- */
 main {
     display: grid;
@@ -112,6 +124,7 @@ main figure {
 .pic-2 {
     padding: 0px;
     width: 200px;
+    border-radius: 20px;
 }
 
 main h1 {
