@@ -5,4 +5,4 @@ year.innerHTML = `&copy ${today.getFullYear()}</span>`;
 
 // insert the date from the last modification was done
 const lastModified = document.lastModified;
-document.getElementById("lastModified").textContent = lastModified;
+document.getElementById("lastmodified").textContent = lastModified;
