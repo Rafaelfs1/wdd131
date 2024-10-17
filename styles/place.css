@@ -84,6 +84,20 @@ footer {
     margin-top: auto;
 }
 
+.weather-icon {
+    width: 50px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: none; /* Hide by default */
+}
+
+/* Show the icon only on mobile screens (below 660px) */
+@media (max-width: 660px) {
+    .weather-icon {
+        display: block; /* Show the icon on mobile */
+    }
+}
+
+
 /* Pseudo element for weather icon */
 .weather h2::after  {
     content: "⛅";
