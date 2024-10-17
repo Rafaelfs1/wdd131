@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>🌆 São Paulo - Explore the City</title>
+    <link rel="stylesheet" href="styles/place.css">
+    
+</head>
+<body>
+    <header>
+        <h1>🌆 São Paulo</h1>
+    </header>
+
+    <section class="hero">
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/hero-small.webp" media="(max-width: 659px)">
+            <img src="images/hero-medium.webp" alt="Panoramic view of São Paulo" class="responsive-img">
+        </picture>
+        <div class="overlay">
+            <div class="data">
+                <h2>City Data</h2>
+                <p>Population: 12.33 million</p>
+                <p>Area: 1,521 km²</p>
+                <p>Founded: 1554</p>
+                <p>State: São Paulo</p>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <p>Temperature: 25°C</p>
+                <p>Wind Speed: 10 km/h</p>
+                <p>Wind Chill Factor: <span id="windChill">N/A</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Rafael Silva - Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
