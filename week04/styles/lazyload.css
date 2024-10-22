@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-color);
+}
+
+:root {
+    --primary-color: #007a8e;
+    --secondary-color: #d35400;
+    --background-color: #f0f0f0 ;
+    --font-color: #2c2c2c ;
+    --overlay-background: rgba(255, 255, 255, 0.7);
+}
+/* ----- header -------*/
+header h1{
+    font-weight: bold;
+    text-align: center;
+    padding: 50px;
+    background: var(--primary-color);
+    color: var(--background-color);
+    margin-bottom: 10px;
+}
+
+header h1:hover {
+    transform: scale(1.1);
+}
+/*---- main --------*/
+main{
+    display: block;
+}
+
+.image-container img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 20px;
+    
+}
+
+
+footer{
+    text-align: center;
+    background-color: var(--secondary-color);
+    height: 100px;
+    padding: 30px;
+    color: #f0f0f0;
+}
