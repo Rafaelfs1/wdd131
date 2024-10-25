@@ -48,7 +48,7 @@ h3 {
 .wireframe {
     border-radius: 26px;
     display: grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(2, 1fr);
     gap: 40px;
     background-color: #d2ffe5;
     border: 2px dashed #4CAF50;
@@ -59,4 +59,12 @@ section{
     display: block;
     width: 100%;
     align-items: center;
+}
+
+.img-large{
+    width: 100%;
+}
+
+.img-small{
+    width: 55%;
 }
