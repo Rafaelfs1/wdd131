@@ -25,6 +25,13 @@ h3 {
 
 .color-scheme {
     margin: 20px 0;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.color-scheme h2{
+    border-bottom: 2px solid #333;
 }
 
 .color-example {
@@ -43,6 +50,7 @@ h3 {
 
 .typography-example {
     margin: 20px 0;
+    
 }
 
 .wireframe {
@@ -68,3 +76,5 @@ section{
 .img-small{
     width: 55%;
 }
+
+
