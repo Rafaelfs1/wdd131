@@ -5,11 +5,11 @@ body {
     margin: 0;
     padding: 0;
 }
-header{
+section .title{
     background-color: #4CAF50;
 }
 
-header h1{
+section .title h1{
     text-align: center;
     font-size: 3em;
     padding: 80px 0;
