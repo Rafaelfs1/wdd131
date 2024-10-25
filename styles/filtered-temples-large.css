@@ -81,6 +81,12 @@ h3{
     color: #2b4c66;
 }
 
+h2{
+    font-size: 0.8em;
+    font-weight: 200;
+    text-align: center;
+}
+
 span.label{
     font-family: 'Courier New', Courier, monospace;
     font-size: small;
