@@ -1,0 +1,40 @@
+/* Layout for larger screens */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #396E94;
+        z-index: 1;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.hidden {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .temples {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    header, footer {
+        text-align: center;
+    }
+
+    .temple-img {
+        min-width: 100%;
+    }
+}
