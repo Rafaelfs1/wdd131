@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="confirmation page app -  learning activity"> 
+    <meta name="author" content="Rafael Silva"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet"></br>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <main>    
+        <div class="review-container">
+            <h2>Product Review</h2>
+            <form id="reviewForm">
+            
+            <!-- Product Name -->
+            <label for="productName">Product Name</label>
+            <select id="productName" required>
+                <option value="">Choose a Product ...</option>
+                
+            </select>
+        
+            <!-- Overall Rating -->
+            <label for="rating">Overall Rating</label>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+            </div>
+        
+            <!-- Date of Installation -->
+            <label for="installationDate">Date of Installation</label>
+            <input type="date" id="installationDate" required>
+        
+            <!-- Features Checklist -->
+            <p>Which features did you find useful in the product? <small>(Check all that apply)</small></p>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="features" value="Durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+                <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+                <label><input type="checkbox" name="features" value="Design"> Design</label>
+            </div>
+        
+            <!-- Written Review -->
+            <label for="reviewText">Written Review <small>(Optional)</small></label>
+            <textarea id="reviewText" rows="4"></textarea>
+        
+            <!-- Name -->
+            <label for="reviewerName">Your Name <small>(Optional)</small></label>
+            <input type="text" id="reviewerName">
+        
+            <!-- Submit Button -->
+            <button type="button" onclick="submitReview()">Post Review</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span> 👍 Rafael Silva 👍 Londrina, Brazil</p>
+        <p id="orange2">last modified: <span id="lastmodified"></span></p>
+    </footer>  
+
+    <script src="scripts/form.js"></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
