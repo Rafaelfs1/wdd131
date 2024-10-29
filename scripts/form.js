@@ -74,10 +74,7 @@ const products = [
   });
 
   function submitReview() {
-   
-  
-    // Redirect to review.html
-    window.location.href = "https://rafaelfs1.github.io/wdd131/review.html";
+    console.log("Submit button clicked"); // This should appear in the console
+    window.location.href = "review.html";
   }
-  
   
