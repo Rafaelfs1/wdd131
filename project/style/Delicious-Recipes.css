@@ -273,6 +273,7 @@ main h3{
 
 .cat-nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
     padding: 16px;
