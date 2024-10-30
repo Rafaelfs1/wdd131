@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Hub - Recipe</title>
+    <meta name="description" content="book of mormon app -  learning activity"> 
+    <meta name="author" content="Rafael Silva"> 
+    <link rel="icon" href="images/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/Delicious-Recipes.css">
+    
+</head>
+<body>
+    <header>
+        
+        <div class="header-1">
+            <a href="delicious-recipes.html">
+                <img  src="images/logo.svg" alt="logo">
+            </a>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <nav>
+                <a  href="delicious-recipes.html">Home</a>
+                <a  href="recipes.html">Recipes</a>
+                <a class="active" href="submit-recipe.html">Submit Your Recipe</a>
+            </nav>
+            
+        </div>
+
+       
+    </header>
+
+    <main>
+        <form id="recipe-form">
+            <h3>Submit a Recipe</h3>
+            
+            <label for="name">Recipe Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+    
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required>
+    
+            <label for="prepTime">Preparation Time:</label>
+            <input type="text" id="prepTime" name="prepTime" required>
+    
+            <label for="ingredients">Ingredients (format: quantity item):</label>
+            <textarea id="ingredients" name="ingredients" placeholder="e.g., 200g Spaghetti" required></textarea>
+    
+            <label for="preparationMethod">Preparation Method:</label>
+            <textarea id="preparationMethod" name="preparationMethod" required></textarea>
+    
+            <label for="imageUrl">Image URL:</label>
+            <input type="text" id="imageUrl" name="imageUrl" placeholder="e.g., images/spaghetti.jpg" required>
+    
+            <label for="rating">Rating (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+    
+            <button type="submit">Add Recipe</button>
+        </form>
+    </main>
+        
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>We are passionate about bringing you the best recipes from around the world, inspiring you to create delicious meals at home.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a  href="delicious-recipes.html">Home</a></li>
+                    <li><a  href="recipes.html">Recipes</a></li>
+                    <li><a href="submit-recipe.html">Submit Your Recipe</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://pinterest.com" target="_blank">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Recipe Website | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="scripts/Delicious-Recipes.js"></script>
+</body>
+</html>
