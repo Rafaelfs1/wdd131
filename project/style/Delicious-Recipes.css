@@ -22,6 +22,11 @@ main a{
     text-decoration: none;
 }
 
+main{
+    display: grid;
+    grid-template: repeat(2, 1fr);
+}
+
 body {
     padding: 0;
     font-family: var(--font-family);
@@ -30,9 +35,18 @@ body {
 }
 
 .container {
+    background-image: url("imagens/recipe-book.webp"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 8px; 
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
 }
 
 /* Header */
@@ -153,7 +167,9 @@ input[type="text"] {
     flex-direction: column;
 }
 
-.recipe-image {
+.recipe-image
+
+{
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -321,7 +337,7 @@ nav ul.hidden {
 /* form -----------------------*/
 /* Form Container */
 #recipe-form {
-    width: 700px;
+    width: 800px;
     margin: 20px auto;
     padding: 30px;
     border-radius: 12px;
@@ -371,6 +387,12 @@ nav ul.hidden {
     background-color: #ffffff;
     outline: none;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.1);
+}
+
+.form-2{
+    display: grid;
+    grid: 2, 1fr;
+    
 }
 
 textarea {
@@ -648,8 +670,79 @@ footer img{
     background-color: #f0f0f0;
 }
 
-/* Responsive Design */
+
+
+/* Base Styling for Header */
+.header-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: var(--color-primary); /* Apply primary color as background */
+    color: #fff;
+}
+
+.header-1 a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.header-1 a:hover {
+    color: #ddd;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden on desktop */
+}
+
+/* Main Navigation Links (Desktop) */
+.header-1 nav {
+    display: flex;
+    gap: 15px;
+    
+}
+
+/* Responsive Styling */
 @media (max-width: 768px) {
+    /* Show hamburger icon on mobile */
+    .hamburger {
+        display: block;
+    }
+
+    /* Hide navigation links initially on mobile */
+    #nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--color-primary); /* Apply primary color as background */
+        text-align: center;
+        padding: 20px 0;
+        z-index: 10;
+    }
+
+    /* Display nav menu when 'show' class is active */
+    #nav-menu.show {
+        display: flex;
+    }
+
+    /* Style for navigation links on mobile */
+    #nav-menu a {
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+
+    #nav-menu a:last-child {
+        border-bottom: none;
+    }
+
+    /* Other Responsive Elements */
     .categories {
         flex-direction: column;
         align-items: center;
@@ -662,4 +755,19 @@ footer img{
     .slider {
         max-width: 100%;
     }
+
+    .cont-side p{
+        display: none;
+    }
+
+    .container-2{
+        display: block;
+        flex-direction: column;
+        
+    }
+    
+    .header-1{
+        justify-content: space-between;
+    }
+
 }

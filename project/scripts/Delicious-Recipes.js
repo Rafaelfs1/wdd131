@@ -539,12 +539,22 @@ const lastModified = document.lastModified;
 document.getElementById("lastmodified").textContent = lastModified;
 
 
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
 
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('hidden');
+
+
+// --- hambuger menu
+
+
+
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.addEventListener("click", function() {
+    navMenu.classList.toggle("show");
 });
+
+
+
 
 
 
